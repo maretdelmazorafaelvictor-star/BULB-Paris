@@ -1,0 +1,76 @@
+.b-dialog-enter-active {
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.p-inputicon {
+  margin-top: -.25em !important;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--p-surface-50);
+}
+
+.dark-mode body {
+  background: black;
+}
+
+:root {
+  --p-message-warn-background: color-mix(in srgb, var(--p-yellow-50), transparent 25%);
+  --p-message-warn-border-color: var(--p-yellow-200);
+  --p-message-warn-color: var(--p-yellow-600);
+  --p-message-error-background: color-mix(in srgb, var(--p-red-50), transparent 25%);
+  --p-message-error-border-color: var(--p-red-200);
+  --p-message-error-color: var(--p-red-600);
+  --p-message-info-background: color-mix(in srgb, var(--p-blue-50), transparent 25%);
+  --p-message-info-border-color: var(--p-blue-200);
+  --p-message-info-color: var(--p-blue-600);
+  --p-message-success-background: color-mix(in srgb, var(--p-green-50), transparent 25%);
+  --p-message-success-border-color: var(--p-green-200);
+  --p-message-success-color: var(--p-green-600);
+  --p-message-blur: 10px;
+}
+
+.dark-mode:root {
+  --p-message-warn-background: color-mix(in srgb, var(--p-yellow-900), transparent 25%);
+  --p-message-warn-border-color: var(--p-yellow-900);
+  --p-message-warn-color: var(--p-yellow-100);
+  --p-message-error-background: color-mix(in srgb, var(--p-red-900), transparent 25%);
+  --p-message-error-border-color: var(--p-red-900);
+  --p-message-error-color: var(--p-red-100);
+  --p-message-info-background: color-mix(in srgb, var(--p-blue-900), transparent 25%);
+  --p-message-info-border-color: var(--p-blue-900);
+  --p-message-info-color: var(--p-blue-100);
+  --p-message-success-background: color-mix(in srgb, var(--p-green-900), transparent 25%);
+  --p-message-success-border-color: var(--p-green-900);
+  --p-message-success-color: var(--p-green-100);
+}
+
+@font-face {
+  font-family: "Parisine Ptf";
+  src: url("assets/fonts/ParisinePtf-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Parisine Ptf";
+  src: url("assets/fonts/ParisinePtf-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Parisine Ptf";
+  src: url("assets/fonts/ParisinePtf-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Parisine Ptf";
+  src: url("assets/fonts/ParisinePtf-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}

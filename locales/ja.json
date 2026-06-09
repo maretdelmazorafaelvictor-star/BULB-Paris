@@ -1,0 +1,424 @@
+{
+  "components": {
+    "airport_select": {
+      "placeholder": "空港の選択"
+    },
+    "color_select": {
+      "placeholder": "色彩の選択"
+    },
+    "dots_color_select": {
+      "placeholder": "ポリシーを選択"
+    },
+    "line_index_select": {
+      "custom_indices": "特注の路線記号",
+      "line_name": "{index}線",
+      "official_indices": "公式の路線記号",
+      "placeholder": "路線記号の選択",
+      "unknown_index": "未知"
+    },
+    "line_style_select": {
+      "placeholder": "路線のスタイルの選択"
+    },
+    "line_thickness_select": {
+      "placeholder": "路線の太さを選択"
+    },
+    "map_size_select": {
+      "placeholder": "サイズの選択"
+    },
+    "mode_select": {
+      "placeholder": "交通機関の選択"
+    },
+    "service_select": {
+      "placeholder": "交通サービスの選択"
+    },
+    "shape_select": {
+      "placeholder": "形の選択"
+    }
+  },
+  "data": {
+    "airports": {
+      "both": "CDG + ORY",
+      "cdg": "パリ＝シャルル・ド・ゴール空港",
+      "generic": "無名",
+      "ory": "パリ＝オルリー空港"
+    },
+    "colors": {
+      "custom": "特注の色"
+    },
+    "dots_color": {
+      "inherit": "継承",
+      "white": "白"
+    },
+    "line_style": {
+      "plain": "無地",
+      "striped": "縞々"
+    },
+    "line_thickness": {
+      "custom": "カスタム",
+      "medium": "中",
+      "normal": "普通",
+      "thick": "厚い"
+    },
+    "map_size": {
+      "big": "XL",
+      "custom": "特注の色",
+      "huge": "XXL",
+      "large": "L",
+      "normal": "M"
+    },
+    "mode": {
+      "bike": "自転車",
+      "boat": "水上バス",
+      "brt": "高速バス",
+      "bus": "バス",
+      "cable": "ロープウェイ",
+      "metro": "地下鉄",
+      "noctilien": "Noctilien",
+      "rer": "RER",
+      "tram": "路面電車",
+      "transilien": "Transilien"
+    },
+    "services": {
+      "airport": "空港",
+      "bullet_train": "新幹線",
+      "cdg_express": "CDG Express",
+      "cdgval": "CDGVAL",
+      "funicular": "ケーブルカー",
+      "long_distance_bus": "高速バス",
+      "main_station": "主要駅",
+      "orlyval": "OrlyVal",
+      "suburban_train": "通勤列車",
+      "ter": "TER",
+      "tgv": "TGV"
+    },
+    "shapes": {
+      "circle": "丸",
+      "cut_rectangle": "下線付き長方形",
+      "lines": "線",
+      "rectangle": "長方形",
+      "rounded_square": "角丸四角形"
+    }
+  },
+  "misc": {
+    "beta": "ベータ版",
+    "new": "新しい",
+    "temporary": "臨時"
+  },
+  "ui": {
+    "dialogs": {
+      "branch_properties": {
+        "element_spacing": "要素スペーシング",
+        "header": "線路のプロパティ",
+        "margin_left": "左余白",
+        "margin_right": "右余白"
+      },
+      "browser_check": {
+        "dismiss": "分かりました",
+        "header": "ブラウザはサポートされていません",
+        "summary_1": "ブラウザとして<b>{browserName}</b>を使用しているようです。このブラウザはBULBでは正式にサポートされていません。このまま使用を続けると、予期せぬ動作が発生したり、グラフィックの問題が発生する可能性があります。",
+        "summary_2": "最適な体験のためには、Google Chrome、Microsoft Edge、Opera、BraveなどのChromiumベースのブラウザを使用することをお勧めします。",
+        "supported_browsers": "サポートされているブラウザ",
+        "unsupported_browsers": "サポートされていないブラウザ"
+      },
+      "connections_editor": {
+        "group": {
+          "delete": "消す",
+          "header": "{index}番目の乗り換えのグループ",
+          "mode": {
+            "lines": {
+              "add": "新しい線路",
+              "header": "線路"
+            },
+            "mode": "交通機関"
+          },
+          "ornament": "装飾品",
+          "pedestrian_connection": "歩きで乗り換える",
+          "service": {
+            "services": {
+              "add": "新しいサービス",
+              "header": "交通サービス"
+            }
+          }
+        },
+        "header": "{stopName}駅の乗り換え",
+        "mode": "交通機関",
+        "or": "又は",
+        "service": "交通サービス"
+      },
+      "custom_index_editor": {
+        "color": "色",
+        "delete": "消す",
+        "header": "特注の路線記号のエディター",
+        "index": "路線記号",
+        "mode": "交通機関",
+        "prefix": "値前",
+        "preview": "プレビュー",
+        "shape": "形",
+        "suffix": "値後",
+        "value": "値"
+      },
+      "custom_indices": {
+        "header": "特注の路線記号帳"
+      },
+      "custom_line_thickness": {
+        "accept": "確定",
+        "header": "カスタム線の太さ"
+      },
+      "end_of_year_celebrations": {
+        "close": "閉じる",
+        "disable_and_close": "無効にして閉じる",
+        "header": "メリークリスマス",
+        "summary": "ホリデーシーズンのために、BULBに雪が降ります。上部バーからいつでも無効にすることができます。"
+      },
+      "fork_properties": {
+        "directional_arrows": {
+          "clockwise": "右回り",
+          "counterclockwise": "左回り",
+          "none": "無し",
+          "title": "方向矢印"
+        },
+        "header": "分岐線のプロパティ",
+        "orientation": {
+          "left": "左",
+          "right": "右",
+          "title": "方面"
+        },
+        "shape": {
+          "downward": "下向き",
+          "symmetrical": "対称的",
+          "title": "形",
+          "upward": "上向き"
+        },
+        "size_multiplier": "サイズ乗数"
+      },
+      "loading_custom_indices_prompt": {
+        "accept": "はい",
+        "header": "プロジェクトの読み込み",
+        "message": "このプロジェクトにバンドルされている特注の路線記号を読み込みますか？すでにお持ちの特注の路線記号が失われることはありません。",
+        "reject": "いいえ"
+      },
+      "loop_properties": {
+        "header": "Uターンのプロパティ",
+        "orientation": {
+          "left": "左",
+          "right": "右",
+          "title": "方"
+        }
+      },
+      "new_project": {
+        "accept": "新しいプロジェクト",
+        "header": "待って、待って！",
+        "message": "現在のプロジェクトを保存しましたか? 続行すると、保存されていない変更はすべて失われます。",
+        "reject": "キャンセル"
+      },
+      "new_update_available": {
+        "header": "新しいアップデートが利用可能",
+        "later": "後で",
+        "message": "BULBの{version}バージョンが利用可能になりました。更新するにはページを再読み込みしますか? データは失われません。",
+        "update": "アップデートする"
+      },
+      "ornament_editor": {
+        "airport": "空港",
+        "display_ornament": "装飾品を付ける",
+        "header": "装飾品のエディター",
+        "name": "名前",
+        "no_ornament_available": "装飾品はありません",
+        "ornament": {
+          "airport": "空港",
+          "airport_name": "空港の名前",
+          "text": "テキスト"
+        },
+        "position": {
+          "below": "下",
+          "right": "右",
+          "title": "位置"
+        },
+        "text": "テキスト"
+      },
+      "outdated_project": {
+        "accept": "新しいプロジェクト",
+        "header": "廃止されたプロジェクト",
+        "message": "このプロジェクトは廃止され、サポートされていません。このまま続行すると問題が発生する可能性があります。新しいプロジェクトを作成するか、サポートされているプロジェクトを開くことをお勧めします。",
+        "reject": "このプロジェクトを続行する"
+      },
+      "parallel_branches_properties": {
+        "alignment": {
+          "fluid": "両端揃え",
+          "left": "左揃え",
+          "right": "右揃え",
+          "title": "配置"
+        },
+        "header": "並行の線路のプロパティ",
+        "section_1_level": "並行の線路の1番目の部分の段階",
+        "section_2_level": "並行の線路の2番目の部分の段階"
+      },
+      "save_project": {
+        "cancel": "キャンセル",
+        "custom_indices_notice": "特注の路線記号はファイルにまとめられます",
+        "header": "プロジェクトを保存",
+        "project_name": "プロジェクトの名前",
+        "save": "保存"
+      },
+      "spacer_properties": {
+        "header": "スペーサーのプロパティ",
+        "size": "スペーサーのサイズ",
+        "spacer_export_notice": "お知らせ：スペーサーはレンダリング時に見えなくなります。"
+      },
+      "stop_properties": {
+        "accessible": {
+          "no": "無し",
+          "title": "車椅子でのアクセス",
+          "undefined": "未定義",
+          "yes": "有り"
+        },
+        "city_name": "市の名前",
+        "closed": "運休",
+        "header": "駅のプロパティ",
+        "interest_point": "興味ポイント",
+        "inverted_elements": "逆さまの要素",
+        "preventOverlapping": "名前と副題が衝突しないようにする",
+        "reverse": "逆さま",
+        "stop_name": "名前",
+        "stop_state": {
+          "close": "運休",
+          "open": "運行中",
+          "title": "駅の運行状況"
+        },
+        "stop_type": {
+          "regular": "普通",
+          "terminus": "終着駅",
+          "title": "駅のタイプ"
+        },
+        "subtitle": "副題",
+        "terminus": "終着駅"
+      },
+      "troubleshooting": {
+        "github": "GitHubの課題を開く",
+        "header": "トラブルシューティング",
+        "notice": "BULBが故障した場合、以下の情報がお役に立ちます。 バグの場合は、 以下の情報を指定して{github}か{twitter}。",
+        "project": "プロジェクト",
+        "technical_details": "技術的詳細",
+        "twitter": "ツイッター(X)で連絡してください"
+      },
+      "use_full_preset": {
+        "accept": "プリセットの線路図を読み込み",
+        "header": "プリセットの線路図の読み込み",
+        "message": "このプリセット値には完全なオリジナル線路図が含まれています。現在のプロジェクトを保存したのを覚えていますか？続行すると、保存されていない変更はすべて失われます。",
+        "reject": "キャンセル"
+      },
+      "use_preset": {
+        "full_presets_notice": "○マークがついているプリセット値はプリセットの線路図です。つまり、完全な構造、すべての停車駅、およびすべての乗り換えを含む路線図です。",
+        "header": "プリセット値の使用"
+      },
+      "warp_add": {
+        "add_all_stops": "全駅を追加する",
+        "city_name": "市の名前",
+        "direction": {
+          "left": "右から左",
+          "right": "左から右",
+          "title": "挿入の方向"
+        },
+        "header": "WarpAddアシスタント",
+        "linebreak": "{shortcut} を押して改行を挿入してください",
+        "notice": "WarpAddアシスタントは、線路に素早く駅を追加することができます。駅の情報を入力したら、{nextShortcut}を押して次の駅に進みます。すべての駅の入力が完了したら、{submitShortcut}を押して終了できます。",
+        "positioning": {
+          "left": "最初に",
+          "right": "最後に",
+          "title": "位置指定"
+        },
+        "reset": "リセット",
+        "stop_name": "駅の名前",
+        "stops_list": "駅一覧",
+        "stops_list_empty": "駅がありません",
+        "subtitle": "副題"
+      }
+    },
+    "map_editor": {
+      "error": {
+        "detail": "ページを再読み込みしてください。問題が解決しない場合、プロジェクトが廃止されているか、破損している可能性があります。",
+        "new_project": "新しいプロジェクト",
+        "reload": "ページを再読み込み",
+        "title": "エラーが発生しました"
+      },
+      "title": "路線図のワークスペース",
+      "toolbox": {
+        "branch": "線路",
+        "delete": "消す",
+        "fork": "分岐点",
+        "loop": "Uターン",
+        "parallel_branches": "並行の線路",
+        "spacer": "スペーサー",
+        "stop": "駅",
+        "untitled_stop": "〇〇駅"
+      },
+      "watermark": "BULBで作成"
+    },
+    "menu": {
+      "custom_indices": "特注の路線記号",
+      "export": "PNGにエクスポート",
+      "export_pdf": "PDFにエクスポート",
+      "new_project": "新しいプロジェクト",
+      "open": "開く",
+      "save": "保存",
+      "title": "メインメニュー",
+      "troubleshooting": "トラブルシューティング"
+    },
+    "nag": "<b>注意</b> : このアプリケーションは現在開発中です。一部の機能はまだ利用できないか、不完全です。",
+    "properties": {
+      "color": "路線の色",
+      "dots_color": "駅のマークの色",
+      "frame_terminus_names": "終着駅名を枠で囲む",
+      "fully_accessible": "車椅子完全対応の路線",
+      "index": "路線記号",
+      "line_style": "路線のスタイル",
+      "line_thickness": "路線の太さ",
+      "mode": "交通機関",
+      "size": "路線図の額のサイズ",
+      "title": "プロパティ",
+      "use_preset": "プリセット値の使用"
+    },
+    "toasts": {
+      "adjacent_branches": {
+        "detail": "線路を隣接して配置することはできません。",
+        "title": "配置禁止"
+      },
+      "branch_merge": {
+        "detail": "隣接する線路が統合されました。",
+        "title": "線路の統合"
+      },
+      "export": {
+        "failure": {
+          "detail": "プロジェクトをエクスポートできませんでした",
+          "title": "エクスポートに失敗しました"
+        },
+        "success": {
+          "detail": "プロジェクトは正常にエクスポートされました",
+          "title": "エクスポートに成功しました"
+        }
+      },
+      "load": {
+        "failure": {
+          "detail": {
+            "corrupted": "プロジェクトファイルが無効または破損しています",
+            "unreadable": "ファイルを読み取れませんでした"
+          },
+          "title": "読み込みに失敗しました"
+        },
+        "success": {
+          "detail": "プロジェクトは正常に読み込まれました",
+          "title": "読み込みに成功しました"
+        }
+      },
+      "save": {
+        "success": {
+          "detail": "プロジェクトは正常に保存されました",
+          "title": "保存に成功しました"
+        }
+      }
+    },
+    "topbar": {
+      "faq": "FAQ",
+      "catch_phrase": "いいですね？ フランス製 🇫🇷"
+    }
+  }
+}
