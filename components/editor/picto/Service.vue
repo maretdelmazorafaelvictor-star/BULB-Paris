@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import bulletTrain from 'assets/svg/services/bullet_train.svg'
-import funicular from 'assets/svg/services/funicular.svg'
 import longDistanceBus from 'assets/svg/services/long_distance_bus.svg'
 import mainStation from 'assets/svg/services/main_station.svg'
 import suburbanTrain from 'assets/svg/services/suburban_train.svg'
@@ -24,8 +23,6 @@ const {
 
 const icon = computed(() => {
   switch (service) {
-    case 'FUNICULAR':
-      return funicular
     case 'MAIN_STATION':
       return mainStation
     case 'BULLET_TRAIN':

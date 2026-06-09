@@ -8,6 +8,8 @@ export function modeToLineThickness(mode: Mode): string {
       return '0.375'
     case 'CABLE':
     case 'TRAM':
+    case 'TRAM_TRAIN':
+    case 'FUNICULAR':
       return '0.625'
     case 'RER':
     case 'TRAIN':
@@ -22,6 +24,8 @@ export function modeToLineStyle(mode: Mode): LineStyle {
   switch (mode) {
     case 'CABLE':
     case 'TRAM':
+    case 'TRAM_TRAIN':
+    case 'FUNICULAR':
       return 'STRIPED'
     default:
       return 'PLAIN'

@@ -9,7 +9,7 @@ const {
 
 const circle = computed(() => mode === 'METRO')
 const roundRectangle = computed(() => ['RER', 'TER', 'TRAIN', 'TRAIN_RER'].includes(mode ?? ''))
-const square = computed(() => ['BOAT', 'BUS', 'BRT', 'CABLE', 'NOCTILIEN', 'TRAM', 'VELO'].includes(mode ?? ''))
+const square = computed(() => ['BOAT', 'BUS', 'BRT', 'CABLE', 'FUNICULAR', 'NOCTILIEN', 'TRAM', 'TRAM_TRAIN', 'VELO'].includes(mode ?? ''))
 </script>
 
 <template>
@@ -23,6 +23,8 @@ const square = computed(() => ['BOAT', 'BUS', 'BRT', 'CABLE', 'NOCTILIEN', 'TRAM
     <MNoctilien v-if="mode === 'NOCTILIEN'" />
     <MRER v-if="mode === 'RER'" />
     <MTram v-if="mode === 'TRAM'" />
+    <MTramTrain v-if="mode === 'TRAM_TRAIN'" />
+    <MFunicular v-if="mode === 'FUNICULAR'" />
     <MTransilien v-if="mode === 'TRAIN'" />
     <MVelo v-if="mode === 'VELO'" />
   </div>
@@ -59,4 +61,5 @@ const square = computed(() => ['BOAT', 'BUS', 'BRT', 'CABLE', 'NOCTILIEN', 'TRAM
   min-width: 1em;
   min-height: .95em;
 }
+
 </style>

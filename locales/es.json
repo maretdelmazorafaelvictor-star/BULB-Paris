@@ -52,6 +52,8 @@
       "noctilien": "Noctilien",
       "rer": "RER",
       "tram": "Tranvía",
+      "tram_train": "Tren-tranvía",
+      "funicular": "Funicular",
       "transilien": "Transilien"
     },
     "services": {

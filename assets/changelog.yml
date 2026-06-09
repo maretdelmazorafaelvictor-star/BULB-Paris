@@ -1,5 +1,17 @@
 ---
 changelog:
+  - version: 1.5.3-alpha
+    date: '2025-11-10T00:00:00.000Z'
+    entries:
+      ADDED:
+        - Ajout du funiculaire en tant que mode de transport
+        - Ajout de la ligne "Montmartre" du funiculaire
+        - Ajout du tram-train en tant que mode de transport
+        - Ajout de la possibilité de changer la couleur d'arrière-plan du point d'intérêt
+      CHANGED:
+        - Les lignes de tram T11, T12, T13 et T14 sont désormais classées comme des tram-trains
+      REMOVED:
+        - Suppression du funiculaire en tant que service de transport
   - version: 1.5.2-alpha
     date: '2025-11-09T00:00:00.000Z'
     entries:

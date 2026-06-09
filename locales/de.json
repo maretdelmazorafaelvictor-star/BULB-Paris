@@ -76,6 +76,8 @@
       "noctilien": "Noctilien",
       "rer": "RER",
       "tram": "Straßenbahn",
+      "tram_train": "Tram-Train",
+      "funicular": "Standseilbahn",
       "transilien": "Transilien"
     },
     "services": {

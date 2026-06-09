@@ -20,7 +20,9 @@ const transparent = computed(() => {
     case 'BUS':
     case 'BRT':
     case 'CABLE':
+    case 'FUNICULAR':
     case 'TRAM':
+    case 'TRAM_TRAIN':
     case 'VELO':
       return true
     default:
@@ -48,6 +50,7 @@ const customIndex = computed(() => {
   <div v-if="index !== null" :class="{ 'rounded bg-white': transparent }">
     <Bus v-if="isBuiltin(index) && index.mode === 'BUS'" :line="index.$builtinLineIndex.index" />
     <Cable v-if="isBuiltin(index) && index.mode === 'CABLE'" :line="index.$builtinLineIndex.index" />
+    <Funicular v-if="isBuiltin(index) && index.mode === 'FUNICULAR'" :line="index.$builtinLineIndex.index" />
     <Metro v-else-if="isBuiltin(index) && index.mode === 'METRO'" :line="index.$builtinLineIndex.index" />
     <ExpressTrain v-else-if="isBuiltin(index) && index.mode === 'RER'" :line="index.$builtinLineIndex.index" />
     <Train v-else-if="isBuiltin(index) && index.mode === 'TRAIN'" :line="index.$builtinLineIndex.index" />

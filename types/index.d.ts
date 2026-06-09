@@ -13,10 +13,11 @@ declare global {
     | 'TRAIN'
     | 'TRAIN_RER'
     | 'TRAM'
+    | 'TRAM_TRAIN'
+    | 'FUNICULAR'
     | 'VELO'
   type Service =
-    'FUNICULAR'
-    | 'MAIN_STATION'
+    'MAIN_STATION'
     | 'BULLET_TRAIN'
     | 'SUBURBAN_TRAIN'
     | 'TGV'
@@ -33,6 +34,7 @@ declare global {
 
   type BusLine = 'tzen1' | 'tzen2' | 'tzen3' | 'tzen4' | 'tzen5' | 'tzen6' | 'tvm' | '393' | string
   type CableLine = '1' | string
+  type FunicularLine = 'MONTMARTRE' | string
   type MetroLine =
     '1'
     | '2'

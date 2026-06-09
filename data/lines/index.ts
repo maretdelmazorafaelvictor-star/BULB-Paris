@@ -1,5 +1,6 @@
 import { BUS_LINES } from './bus'
 import { CABLE_LINES } from './cable'
+import { FUNICULAR_LINES } from './funicular'
 import { METRO_LINES } from './metro'
 import { RER_LINES } from './rer'
 import { TRAM_LINES } from './tram'
@@ -8,6 +9,7 @@ import { TRANSILIEN_LINES } from './transilien'
 const BUILTIN_LINES: IndexChoice<BuiltinLineIndex>[] = Array.of(
   ...BUS_LINES,
   ...CABLE_LINES,
+  ...FUNICULAR_LINES,
   ...METRO_LINES,
   ...RER_LINES,
   ...TRAM_LINES,
@@ -18,6 +20,7 @@ export {
   BUILTIN_LINES,
   BUS_LINES,
   CABLE_LINES,
+  FUNICULAR_LINES,
   METRO_LINES,
   RER_LINES,
   TRAM_LINES,
