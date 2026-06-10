@@ -10,6 +10,7 @@ const {
   interestPoint = false,
   accessible = 'undefined',
   reverse = false,
+  color, // <--- AJOUTER ICI
 } = defineProps<{
   value: string
   preventSubtitleOverlapping: boolean
@@ -18,8 +19,8 @@ const {
   accessible?: boolean | 'undefined' | undefined
   interestPoint?: boolean
   reverse?: boolean
+  color?: string // <--- ET ICI
 }>()
-
 const stopContext = inject<StopContext>(StopContextKey)!
 
 const valueParts = computed(() => value.split('\n').filter(part => part.trim() !== ''))
@@ -66,12 +67,15 @@ watch([shift, () => interestPoint, () => subtitle], ([_shift, _interestPoint, _s
       }"
     >
       <TiltedText :reverse="reverse">
-        <StopSubtitle :interest-point="interestPoint" :value="subtitle" />
+        <StopSubtitle 
+          :interest-point="interestPoint" 
+          :value="subtitle" 
+          :color="color" 
+        />
       </TiltedText>
     </div>
   </div>
 </template>
-
 <style scoped lang="scss">
 .regular-label {
   display: flex;

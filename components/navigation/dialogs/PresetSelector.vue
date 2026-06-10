@@ -165,6 +165,26 @@ function loadPreset(_mode: Mode, _index: LineIndex, _color?: string) {
         </Button>
       </div>
     </Fieldset>
+    <Fieldset :legend="$t('data.mode.tram_train')">
+      <div class="btn-group">
+        <Button
+          v-for="tram in TRAM_TRAIN_LINES"
+          :key="tram.label"
+          text
+          severity="secondary"
+          :pt="{ root: { class: 'important-p-1 important-text-5xl' } }"
+          @click="loadPreset('TRAM_TRAIN', tram.value, tram.color)"
+        >
+          <div class="relative">
+            <LineIndex mode="TRAM_TRAIN" :index="tram.value" />
+            <i
+              v-if="FULL_TEMPLATE.TRAM_TRAIN.includes(tram.value.$builtinLineIndex.index)"
+              class="absolute bottom-0 right-0 badge"
+            />
+          </div>
+        </Button>
+      </div>
+    </Fieldset>
   </Dialog>
 </template>
 

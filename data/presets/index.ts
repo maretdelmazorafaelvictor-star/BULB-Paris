@@ -1,3 +1,4 @@
+import Tram_Train from '~/components/editor/picto/Tram_Train.vue'
 import * as Metros from '~/data/presets/metro'
 import * as Rers from '~/data/presets/rer'
 import * as Trains from '~/data/presets/train'
@@ -95,15 +96,17 @@ export function getPreset(mode: Mode, index: LineIndex): Project | null {
           return Trams.TRAM_9 as unknown as Project
         case '10':
           return Trams.TRAM_10 as unknown as Project
-        case '11':
-          return Trams.TRAM_11 as unknown as Project
+
+      case 'TRAM_TRAIN':
+                case '11':
+          return Tram_Train.TRAM_TRAIN_11 as unknown as Project
         case '12':
-          return Trams.TRAM_12 as unknown as Project
+          return Tram_Train.TRAM_TRAIN_12 as unknown as Project
         case '13':
-          return Trams.TRAM_13 as unknown as Project
+          return Tram_Train.TRAM_TRAIN_13 as unknown as Project
         case '14':
-          return Trams.TRAM_14 as unknown as Project
-        default:
+          return Tram_Train.TRAM_TRAIN_14 as unknown as Project
+          default:
           return null
       }
   }
