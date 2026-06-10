@@ -11,9 +11,6 @@ const props = defineProps<{
   terminus?: boolean
   reverse: boolean
   accessible: boolean | 'undefined' | undefined
-  
-  // LA LIGNE À AJOUTER :
-  color?: string 
 }>()
 
 const lineContext = inject<LineContext>(LineContextKey)!

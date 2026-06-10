@@ -11,7 +11,6 @@ const emit = defineEmits<{
 }>()
 const visible = defineModel<boolean>('visible', { required: true })
 const stop = defineModel<Stop>({ required: true })
-
 const accessibilityOptions = [
   { label: 'ui.dialogs.stop_properties.accessible.undefined', value: 'undefined' },
   { label: 'ui.dialogs.stop_properties.accessible.yes', value: true },
@@ -72,33 +71,6 @@ function openConnectionsEditor() {
         <div class="flex flex-col gap-1">
           <label :for="`${stop.id}_subtitle`">{{ $t('ui.dialogs.stop_properties.subtitle') }}</label>
           <InputText :id="`${stop.id}_subtitle`" v-model="stop.$stop.subtitle" :spellcheck="false" />
-        </div>
-
-        <div v-if="stop.$stop.subtitle" class="flex flex-col gap-2 mt-1">
-          <label class="text-xs font-bold text-gray-400 uppercase tracking-wider">
-            Couleur de fond du sous-titre
-          </label>
-          <div class="flex items-center gap-3">
-            <input 
-              type="color" 
-              v-model="(stop.$stop as any).color" 
-              class="w-8 h-8 rounded cursor-pointer border border-neutral-600 bg-transparent p-0"
-            />
-            
-            <span class="text-sm font-mono text-gray-400">
-              {{ (stop.$stop as any).color || '#8B5A2B (Défaut)' }}
-            </span>
-            
-            <Button 
-              v-if="(stop.$stop as any).color"
-              size="small" 
-              severity="danger" 
-              text 
-              icon="pi pi-refresh"
-              class="important-p-1"
-              @click="(stop.$stop as any).color = undefined" 
-            />
-          </div>
         </div>
 
         <div class="flex items-center gap-4 h-1em mt-2">
