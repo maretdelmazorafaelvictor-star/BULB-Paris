@@ -11,10 +11,6 @@ import LINE_7 from '~/assets/svg/lines/tram/tram_T7.svg'
 import LINE_8 from '~/assets/svg/lines/tram/tram_T8.svg'
 import LINE_9 from '~/assets/svg/lines/tram/tram_T9.svg'
 import LINE_10 from '~/assets/svg/lines/tram/tram_T10.svg'
-import LINE_11 from '~/assets/svg/lines/tram/tram_T11.svg'
-import LINE_12 from '~/assets/svg/lines/tram/tram_T12.svg'
-import LINE_13 from '~/assets/svg/lines/tram/tram_T13.svg'
-import LINE_14 from '~/assets/svg/lines/tram/tram_T14.svg'
 
 const {
   line,
@@ -46,17 +42,8 @@ const picto = computed(() => {
       return LINE_9
     case '10':
       return LINE_10
-    case '11':
-      return LINE_11
-    case '12':
-      return LINE_12
-    case '13':
-      return LINE_13
-    case '14':
-      return LINE_14
-  }
   return null
-})
+}})
 </script>
 
 <template>

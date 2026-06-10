@@ -7,8 +7,6 @@ import {
   OLIVE_FONCE,
   ORANGE,
   ROUGE_COQUELICOT,
-  ROUGE_FRAMBOISE,
-  TURQUOISE,
   VERT_FONCE,
   VIOLET,
 } from '~/data/colors'
@@ -25,8 +23,4 @@ export const TRAM_LINES: IndexChoice<BuiltinLineIndex>[] = [
   { value: { mode: 'TRAM', $builtinLineIndex: { index: '8' } }, label: 'Tramway T8', color: OLIVE_FONCE.value },
   { value: { mode: 'TRAM', $builtinLineIndex: { index: '9' } }, label: 'Tramway T9', color: BLEU_OUTREMER.value },
   { value: { mode: 'TRAM', $builtinLineIndex: { index: '10' } }, label: 'Tramway T10', color: OLIVE_FONCE.value },
-  { value: { mode: 'TRAM', $builtinLineIndex: { index: '11' } }, label: 'Tramway T11', color: ORANGE.value },
-  { value: { mode: 'TRAM', $builtinLineIndex: { index: '12' } }, label: 'Tramway T12', color: ROUGE_FRAMBOISE.value },
-  { value: { mode: 'TRAM', $builtinLineIndex: { index: '13' } }, label: 'Tramway T13', color: MARON.value },
-  { value: { mode: 'TRAM', $builtinLineIndex: { index: '14' } }, label: 'Tramway T14', color: TURQUOISE.value },
 ]

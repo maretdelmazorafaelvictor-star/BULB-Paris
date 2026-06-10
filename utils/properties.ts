@@ -8,9 +8,10 @@ export function modeToLineThickness(mode: Mode): string {
       return '0.375'
     case 'CABLE':
     case 'TRAM':
-    case 'TRAM_TRAIN':
     case 'FUNICULAR':
       return '0.625'
+    case 'TRAM_TRAIN':
+      return '0.8'
     case 'RER':
     case 'TRAIN':
     case 'TRAIN_RER':
@@ -25,7 +26,6 @@ export function modeToLineStyle(mode: Mode): LineStyle {
     case 'CABLE':
     case 'TRAM':
     case 'TRAM_TRAIN':
-    case 'FUNICULAR':
       return 'STRIPED'
     default:
       return 'PLAIN'
@@ -37,6 +37,7 @@ export function modeToDotsColorPolicy(mode: Mode): DotsColorPolicy {
     case 'RER':
     case 'TRAIN':
     case 'TRAIN_RER':
+    case 'TRAM_TRAIN':
       return 'WHITE'
     default:
       return 'INHERIT'

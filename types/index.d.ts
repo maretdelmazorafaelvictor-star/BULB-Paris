@@ -60,7 +60,7 @@ declare global {
   type RerLine = 'A' | 'B' | 'C' | 'D' | 'E' | string
   type TrainLine = 'H' | 'J' | 'K' | 'L' | 'N' | 'P' | 'R' | 'U' | 'V' | string
   type TramLine = '1' | '2' | '3a' | '3b' | '4' | '5' | '6' | '7' | '8' | '11' | '12' | '13' | '14' | string
-
+  type Tram_TrainLine = '11' | '12' | '13' | '14' | string
   type IndexShape = 'CIRCLE' | 'ROUNDED_SQUARE' | 'LINES' | 'RECTANGLE' | 'CUT_RECTANGLE'
 
   interface ColorChoice {
