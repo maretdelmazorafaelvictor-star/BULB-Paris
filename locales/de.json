@@ -78,14 +78,14 @@
       "tram": "Straßenbahn",
       "tram_train": "Tram-Train",
       "funicular": "Standseilbahn",
-      "transilien": "Transilien"
+      "transilien": "Transilien",
+      "VAL": "VAL"
     },
     "services": {
       "airport": "Flughafen",
       "bullet_train": "Fernverkehr",
       "cdg_express": "CDG Express",
       "cdgval": "CDGVAL",
-      "funicular": "Standseilbahn",
       "long_distance_bus": "Fernbus",
       "main_station": "Bahnhof",
       "orlyval": "OrlyVal",

@@ -7,7 +7,7 @@ const {
   mode: Mode | null
 }>()
 
-const circle = computed(() => mode === 'METRO')
+const circle = computed(() => ['METRO', 'VAL'].includes(mode ?? ''))
 const roundRectangle = computed(() => ['RER', 'TER', 'TRAIN', 'TRAIN_RER'].includes(mode ?? ''))
 const square = computed(() => ['BOAT', 'BUS', 'BRT', 'CABLE', 'FUNICULAR', 'NOCTILIEN', 'TRAM', 'TRAM_TRAIN', 'VELO'].includes(mode ?? ''))
 </script>
@@ -27,6 +27,7 @@ const square = computed(() => ['BOAT', 'BUS', 'BRT', 'CABLE', 'FUNICULAR', 'NOCT
     <MFunicular v-if="mode === 'FUNICULAR'" />
     <MTransilien v-if="mode === 'TRAIN'" />
     <MVelo v-if="mode === 'VELO'" />
+    <MVal v-if="mode === 'VAL'" />
   </div>
 </template>
 

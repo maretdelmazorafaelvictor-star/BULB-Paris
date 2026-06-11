@@ -78,14 +78,14 @@
       "tram": "Tram",
       "tram_train": "Tram-treno",
       "funicular": "Funicolare",
-      "transilien": "Transilien"
+      "transilien": "Transilien",
+      "VAL": "VAL"
     },
     "services": {
       "airport": "Aeroporto",
       "bullet_train": "Treno ad alta velocità",
       "cdg_express": "CDG Express",
       "cdgval": "CDGVAL",
-      "funicular": "Funicolare",
       "long_distance_bus": "Pullman",
       "main_station": "Stazione importante",
       "orlyval": "OrlyVal",

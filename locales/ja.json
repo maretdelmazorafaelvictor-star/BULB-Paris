@@ -78,14 +78,14 @@
       "tram": "路面電車",
       "tram_train": "トラムトレイン",
       "funicular": "ケーブルカー",
-      "transilien": "Transilien"
+      "transilien": "Transilien",
+      "VAL": "VAL"
     },
     "services": {
       "airport": "空港",
       "bullet_train": "新幹線",
       "cdg_express": "CDG Express",
       "cdgval": "CDGVAL",
-      "funicular": "ケーブルカー",
       "long_distance_bus": "高速バス",
       "main_station": "主要駅",
       "orlyval": "OrlyVal",

@@ -4,6 +4,7 @@ export function modeToLineThickness(mode: Mode): string {
     case 'BRT':
     case 'BUS':
     case 'METRO':
+    case 'VAL':
     case 'VELO':
       return '0.375'
     case 'CABLE':

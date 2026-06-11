@@ -15,6 +15,7 @@ declare global {
     | 'TRAM'
     | 'TRAM_TRAIN'
     | 'FUNICULAR'
+    | 'VAL'
     | 'VELO'
   type Service =
     'MAIN_STATION'
@@ -35,6 +36,7 @@ declare global {
   type BusLine = 'tzen1' | 'tzen2' | 'tzen3' | 'tzen4' | 'tzen5' | 'tzen6' | 'tvm' | '393' | string
   type CableLine = '1' | string
   type FunicularLine = 'MONTMARTRE' | string
+  type VALLine = 'CDGVAL' | 'ORLYVAL' | string
   type MetroLine =
     '1'
     | '2'

@@ -78,14 +78,14 @@
       "tram": "Tramway",
       "tram_train": "Tram-train",
       "funicular": "Funicular",
-      "transilien": "Transilien"
+      "transilien": "Transilien",
+      "VAL": "VAL"
     },
     "services": {
       "airport": "Airport",
       "bullet_train": "Bullet train",
       "cdg_express": "CDG Express",
       "cdgval": "CDGVAL",
-      "funicular": "Funicular",
       "long_distance_bus": "Long-distance bus",
       "main_station": "Main station",
       "orlyval": "OrlyVal",
