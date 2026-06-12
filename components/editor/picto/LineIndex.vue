@@ -56,6 +56,7 @@ const customIndex = computed(() => {
     <Train v-else-if="isBuiltin(index) && index.mode === 'TRAIN'" :line="index.$builtinLineIndex.index" />
     <Tram v-else-if="isBuiltin(index) && index.mode === 'TRAM'" :line="index.$builtinLineIndex.index" />
     <Tram_Train v-else-if="isBuiltin(index) && index.mode === 'TRAM_TRAIN'" :line="index.$builtinLineIndex.index" />
+    <Val v-else-if="isBuiltin(index) && index.mode === 'VAL'" :line="index.$builtinLineIndex.index" />
     <CustomLineIndex
       v-else-if="isCustom(index)"
       :shape="customIndex.shape"

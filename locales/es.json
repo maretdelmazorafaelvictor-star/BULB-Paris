@@ -55,7 +55,7 @@
       "tram_train": "Tren-tranvía",
       "funicular": "Funicular",
       "transilien": "Transilien",
-      "VAL": "VAL"
+      "val": "VAL"
     },
     "services": {
       "airport": "Aeropuerto",

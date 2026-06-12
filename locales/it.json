@@ -79,7 +79,7 @@
       "tram_train": "Tram-treno",
       "funicular": "Funicolare",
       "transilien": "Transilien",
-      "VAL": "VAL"
+      "val": "VAL"
     },
     "services": {
       "airport": "Aeroporto",

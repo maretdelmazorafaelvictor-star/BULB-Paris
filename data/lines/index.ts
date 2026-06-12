@@ -4,9 +4,8 @@ import { FUNICULAR_LINES } from './funicular'
 import { METRO_LINES } from './metro'
 import { RER_LINES } from './rer'
 import { TRAM_LINES } from './tram'
+import { TRAM_TRAIN_LINES } from './tram_train'
 import { TRANSILIEN_LINES } from './transilien'
-// 1. On l'importe depuis votre fichier (adaptez le nom du fichier si nécessaire)
-import { TRAM_TRAIN_LINES } from './tram_train' 
 import { VAL_LINES } from './val'
 
 const BUILTIN_LINES: IndexChoice<BuiltinLineIndex>[] = Array.of(
@@ -17,7 +16,7 @@ const BUILTIN_LINES: IndexChoice<BuiltinLineIndex>[] = Array.of(
   ...TRAM_LINES,
   ...TRANSILIEN_LINES,
   ...FUNICULAR_LINES,
-  ...TRAM_TRAIN_LINES, 
+  ...TRAM_TRAIN_LINES,
   ...VAL_LINES,
 )
 
@@ -25,14 +24,13 @@ export {
   BUILTIN_LINES,
   BUS_LINES,
   CABLE_LINES,
+  FUNICULAR_LINES,
   METRO_LINES,
   RER_LINES,
   TRAM_LINES,
-  VAL_LINES,
-  // 2. C'est ICI qu'il faut l'ajouter sous le nom exact attendu (TRAM_TRAIN_LINES) !
   TRAM_TRAIN_LINES,
   TRANSILIEN_LINES,
-  FUNICULAR_LINES,
+  VAL_LINES,
 }
 
 export function getLinesByMode(mode: Mode | null): IndexChoice<BuiltinLineIndex>[] {

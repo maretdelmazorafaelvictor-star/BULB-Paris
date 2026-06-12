@@ -8,11 +8,7 @@ export const SERVICES: ServiceChoice[] = [
   { value: 'LONG_DISTANCE_BUS', label: 'data.services.long_distance_bus' },
   { value: 'ROISSY_BUS', label: '\u200B' },
   { value: 'ORLY_BUS', label: '\u200B' },
-  { value: 'CDGVAL', label: 'data.services.cdgval' },
-  { value: 'ORLYVAL', label: 'data.services.orlyval' },
   { value: 'CDG_EXPRESS', label: 'data.services.cdg_express' },
-  { value: 'ORLYVAL_LARGE', label: '\u200B' },
-  { value: 'ORLYVAL_LARGE_2', label: '\u200B' },
 ]
 
 export function findServiceByValue(value: Service | null): ServiceChoice | null {
