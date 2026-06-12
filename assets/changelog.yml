@@ -8,6 +8,7 @@ changelog:
         - Ajout de la ligne "Montmartre" du funiculaire
         - Ajout du tram-train en tant que mode de transport
         - Ajout de la possibilité de changer la couleur d'arrière-plan du point d'intérêt
+        - Ajout du VAL (Véhicule Automatique Léger) en tant que mode de transport
       CHANGED:
         - Les lignes de tram T11, T12, T13 et T14 sont désormais classées comme des tram-trains
       REMOVED:
