@@ -52,6 +52,7 @@ const customIndex = computed(() => {
     <Cable v-if="isBuiltin(index) && index.mode === 'CABLE'" :line="index.$builtinLineIndex.index" />
     <Funicular v-if="isBuiltin(index) && index.mode === 'FUNICULAR'" :line="index.$builtinLineIndex.index" />
     <Metro v-else-if="isBuiltin(index) && index.mode === 'METRO'" :line="index.$builtinLineIndex.index" />
+    <Noctilien v-else-if="isBuiltin(index) && index.mode === 'NOCTILIEN'" :line="index.$builtinLineIndex.index" />
     <ExpressTrain v-else-if="isBuiltin(index) && index.mode === 'RER'" :line="index.$builtinLineIndex.index" />
     <Train v-else-if="isBuiltin(index) && index.mode === 'TRAIN'" :line="index.$builtinLineIndex.index" />
     <Tram v-else-if="isBuiltin(index) && index.mode === 'TRAM'" :line="index.$builtinLineIndex.index" />
